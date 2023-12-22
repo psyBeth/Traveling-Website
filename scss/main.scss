@@ -1,0 +1,6 @@
+@use "./abstracts/variables" as v;
+@use "./base/reset";
+
+body{
+    background-color: v.$mainColor;
+}
