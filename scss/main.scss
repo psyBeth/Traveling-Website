@@ -1,6 +1,12 @@
+//? BASE - ABSTRACTS
 @use "./abstracts/variables" as v;
 @use "./base/reset";
 
 body{
     background-color: v.$mainColor;
+}
+
+.container{
+    max-width: v.$maxWidth;
+    margin: auto;
 }
