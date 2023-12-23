@@ -24,6 +24,7 @@
             color: $headerColor;
             border: none;
             background-color: $mainColor;
+            @include setFont("Inter", 100, 1rem, 19px);
         }
         &--disabled{
             @extend .header__links--home;
