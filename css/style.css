@@ -1,23 +1,36 @@
-/* Error: Missing argument $ai.
- *   ,--> scss/components/_navbar.scss
- * 6 |     @include flex(space-between);
- *   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
- *   '
- *   ,--> scss/abstracts/_mixin.scss
- * 2 | @mixin flex($jc, $ai){
- *   |        ============== declaration
- *   '
- *   scss/components/_navbar.scss 6:5  flex()
- *   scss/components/_navbar.scss 6:5  @use
- *   scss/main.scss 6:1                root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Missing argument $ai.\a   \250c \2500 \2500 > scss/components/_navbar.scss\a 6 \2502      @include flex(space-between);\a   \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > scss/abstracts/_mixin.scss\a 2 \2502  @mixin flex($jc, $ai){\a   \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   scss/components/_navbar.scss 6:5  flex()\a   scss/components/_navbar.scss 6:5  @use\a   scss/main.scss 6:1                root stylesheet";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Mulish&family=Playfair+Display&family=Rampart+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  width: 50px;
+  height: 50px;
+}
+.header i {
+  display: none;
+}
+.header__links {
+  list-style-type: none;
+  display: flex;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1536px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

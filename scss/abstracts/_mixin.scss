@@ -1,5 +1,5 @@
 //mixins will be here
-@mixin flex($jc, $ai){
+@mixin flex($jc, $ai: center){
     display: flex;
     justify-content: $jc;
     align-items: $ai;
