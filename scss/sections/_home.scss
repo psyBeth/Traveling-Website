@@ -1,5 +1,11 @@
+@use "../abstracts/mixin" as *;
+
 .home{
+    @include flex(center);
     &__image{
         width: 50%;
+    }
+    &__form{
+
     }
 }

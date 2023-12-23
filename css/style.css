@@ -67,10 +67,14 @@
   opacity: 0.6;
 }
 
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .home__image {
   width: 50%;
 }
-
 body {
   background-color: #ffffff;
 }
