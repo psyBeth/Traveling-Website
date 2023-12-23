@@ -1,5 +1,6 @@
 //navbar
 @use "../abstracts/mixin" as *;
+@use "../abstracts/variables" as *;
 
 .header{
 
@@ -14,8 +15,20 @@
     }
 
     &__links{
+        @include flex(space-between);
+        gap: 0.5rem;
         list-style-type: none;
-        display: flex;
+        padding: 1rem 0;
+
+        &--home{
+            color: $headerColor;
+            border: none;
+            background-color: $mainColor;
+        }
+        &--disabled{
+            @extend .header__links--home;
+            color: #b8becd;
+        }
 
     }
 
